@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Todo List</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./style.css" />
+</head>
+      <body>
+        <header class="header">
+          
+          <h1 class="header__text">
+            Todo List
+          </h1>
+          
+        </header>
+        <main class="container">
+          <form id="form-create" class="form">
+            <!-- <div> -->
+              <input
+                id="input-create"
+                type="text"
+                class="input"
+                placeholder="Enter text..."
+                autocomplete="off"
+              />
+              <!-- <span id="message-create" class="text-danger"></span> -->
+            <!-- </div> -->
+            <span id="clearInput"><i class="fa-solid fa-xmark"></i></span>
+            <button class="btn form__button">Add</button>
+          </form>
+    
+          <div id="list-group-todo" class="list-group"></div>
+
+          <span class="all__clean" id="allClear">All clear</span>
+    
+          <!-- modal -->
+          <div id="modal" class="modal-todo hidden">
+            <div class="card">
+              <div
+                class="card-header"
+              >
+                <h5>Change This Todo</h5>
+                <i id="close" class="fas fa-times" src="img/close.svg" alt="" width="25" height="25"></i>
+              </div>
+              <div class="card-body">
+                <form id="form-edit" class="modal__form">
+                  <!-- <div> -->
+                    <input
+                      id="input-edit"
+                      type="text"
+                      placeholder="Enter text..."
+                      autocomplete="off"
+                    />
+                    <span id="message-edit" class="text-danger"></span>
+                  <!-- </div> -->
+                  <button class="modal__btn">
+                    Save
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </main>
+    
+        <div id="overlay" class="overlay hidden"></div>
+    
+       
+        <!-- <script src="js/bootstrap.min.js"></script> -->
+        <script src="./index.js"></script>
+      </body>
+    
+</html>
