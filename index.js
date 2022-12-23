@@ -122,10 +122,10 @@ function close() {
 };
 
 
-localStorage.clear(); 
+// localStorage.clear(); 
 allClear.addEventListener("click", () =>{
   localStorage.removeItem("list");
-  todos = []
+  todos = [];
   listGroupTodo.innerHTML = '';
   console.log('salom');
  
