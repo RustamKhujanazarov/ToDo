@@ -122,7 +122,7 @@ function close() {
 };
 
 
-// localStorage.clear(); 
+
 allClear.addEventListener("click", () =>{
   localStorage.removeItem("list");
   todos = [];
